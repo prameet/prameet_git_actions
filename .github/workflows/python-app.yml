@@ -22,6 +22,7 @@ jobs:
 
   deploy-via-sftp:
     runs-on: ubuntu-latest
+    needs: build
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
@@ -39,7 +40,7 @@ jobs:
           # will put all file under this path
           local_path: ./* # default is ./*
           # files will copy to under remote_path
-          remote_path: /root/middle_layer
+          remote_path: /root/middle_layer1
 
           # sftp args
           args: '-o ConnectTimeout=5'
