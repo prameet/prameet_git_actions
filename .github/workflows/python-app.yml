@@ -32,7 +32,9 @@ jobs:
           username: root
           server: 194.163.140.70
           port: 22 # default is 22
-          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          password: VenusBlankee2023
+#          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+
 
           # will put all file under this path
           local_path: ./* # default is ./*
