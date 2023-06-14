@@ -34,4 +34,4 @@ jobs:
           username: ${{ secrets.USERNAME}}
           password: ${{ secrets.PASSWORD }}
           server-dir: ${{ secrets.WORK_DIR }}
-          
+          port: 22
