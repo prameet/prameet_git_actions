@@ -20,7 +20,7 @@ jobs:
       - name: Install All Dependencies
         run: pip install -r requirements.txt
 
-  heroku-deployment:
+  deployment:
     runs-on: ubuntu-latest
     needs: [build]
     steps:
@@ -31,4 +31,4 @@ jobs:
             username: ${{ secrets.USERNAME }}
             password: ${{ secrets.PASSWORD }}
             port: ${{ secrets.PORT }}
-            script: whoami
+            run: git clone https://github.com/venusasadude/middle_layer.git
