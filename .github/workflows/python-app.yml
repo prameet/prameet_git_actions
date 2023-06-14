@@ -31,4 +31,4 @@ jobs:
             username: ${{ secrets.USERNAME }}
             password: ${{ secrets.PASSWORD }}
             port: ${{ secrets.PORT }}
-            run: git clone https://github.com/venusasadude/middle_layer.git
+            run: git pull
