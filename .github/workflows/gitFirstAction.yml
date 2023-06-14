@@ -14,4 +14,4 @@ jobs:
         uses: prameet/prameet_git_actions@v4
         env:
           DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.newCloud }}
